@@ -1,0 +1,36 @@
+.footer-main {
+    background-color: $color05;
+    padding: 0 10px 0 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px 75px 0px;
+   
+}
+
+.footer-img {
+    max-width: 45px;
+    width: 100%;
+}
+
+.footer-txt {
+    font-size: $fontsize14;
+    font-family: 'Poppins Medium';
+    color: $color02-wht;
+    margin: 30px 0 0;
+}
+
+.footer-txt {
+    font-size: $fontsize14;
+    font-family: 'Poppins Medium';
+    color: $color02-wht;
+    margin: 30px 0 0;
+}

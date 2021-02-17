@@ -1,0 +1,28 @@
+@mixin spacedcenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin verticalflex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin boxcontainer {
+    max-width: 1010px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+}
+
+
+@mixin greybox {
+    background-color: $color03-white2;
+    width: 100%;
+    padding: 20px 0 40px 0;
+}
+
+
+

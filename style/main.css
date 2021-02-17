@@ -1,0 +1,805 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:hover {
+  color: #707070;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+button, textarea, input:focus {
+  outline: 0;
+  border: 0;
+  resize: none; }
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url("../fonts/Poppins-Bold.eot");
+  src: url("../fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("truetype"), url("../fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Black';
+  src: url("../fonts/Poppins-Black.eot");
+  src: url("../fonts/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins-Black.woff") format("woff"), url("../fonts/Poppins-Black.ttf") format("truetype"), url("../fonts/Poppins-Black.svg#Poppins-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url("../fonts/Poppins-Medium.eot");
+  src: url("../fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins-Medium.ttf") format("truetype"), url("../fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url("../fonts/Poppins-SemiBold.eot");
+  src: url("../fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Bold';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO ExtraBold';
+  src: url("../fonts/FiraGO-ExtraBold.eot");
+  src: url("../fonts/FiraGO-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-ExtraBold.woff2") format("woff2"), url("../fonts/FiraGO-ExtraBold.woff") format("woff"), url("../fonts/FiraGO-ExtraBold.ttf") format("truetype"), url("../fonts/FiraGO-ExtraBold.svg#FiraGO-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Heavy';
+  src: url("../fonts/FiraGO-Heavy.eot");
+  src: url("../fonts/FiraGO-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Heavy.woff2") format("woff2"), url("../fonts/FiraGO-Heavy.woff") format("woff"), url("../fonts/FiraGO-Heavy.ttf") format("truetype"), url("../fonts/FiraGO-Heavy.svg#FiraGO-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Medium';
+  src: url("../fonts/FiraGO-Medium.eot");
+  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Regular';
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO SemiBold';
+  src: url("../fonts/FiraGO-SemiBold.eot");
+  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Thin';
+  src: url("../fonts/FiraGO-Thin.eot");
+  src: url("../fonts/FiraGO-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Thin.woff2") format("woff2"), url("../fonts/FiraGO-Thin.woff") format("woff"), url("../fonts/FiraGO-Thin.ttf") format("truetype"), url("../fonts/FiraGO-Thin.svg#FiraGO-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/PlayfairDisplay-Black.eot");
+  src: url("../fonts/PlayfairDisplay-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff"), url("../fonts/PlayfairDisplay-Black.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Black.svg#PlayfairDisplay-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'BPG Nino Mtavruli';
+  src: url("../fonts/bpg-nino-mtavruli-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-nino-mtavruli-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-nino-mtavruli-webfont.woff2") format("woff2"), url("../fonts/bpg-nino-mtavruli-webfont.woff") format("woff"), url("../fonts/bpg-nino-mtavruli-webfont.ttf") format("truetype"), url("../fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'BPG Nino Mtavruli Bold';
+  src: url("../fonts/BPGNinoMtavruli-Bold.eot");
+  src: url("../fonts/BPGNinoMtavruli-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BPGNinoMtavruli-Bold.woff2") format("woff2"), url("../fonts/BPGNinoMtavruli-Bold.woff") format("woff"), url("../fonts/BPGNinoMtavruli-Bold.ttf") format("truetype"), url("../fonts/BPGNinoMtavruli-Bold.svg#BPGNinoMtavruli-Bold") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Book';
+  src: url("../fonts/FiraGO-Book.eot");
+  src: url("../fonts/FiraGO-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO BoldItalic';
+  src: url("../fonts/FiraGO-BoldItalic.eot");
+  src: url("../fonts/FiraGO-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-BoldItalic.woff2") format("woff2"), url("../fonts/FiraGO-BoldItalic.woff") format("woff"), url("../fonts/FiraGO-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Light';
+  src: url("../fonts/FiraGO-Light.eot");
+  src: url("../fonts/FiraGO-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Light.woff2") format("woff2"), url("../fonts/FiraGO-Light.woff") format("woff"), url("../fonts/FiraGO-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO LightItalic';
+  src: url("../fonts/FiraGO-LightItalic.eot");
+  src: url("../fonts/FiraGO-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-LightItalic.woff2") format("woff2"), url("../fonts/FiraGO-LightItalic.woff") format("woff"), url("../fonts/FiraGO-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display BlackItalic';
+  src: url("../fonts/PlayfairDisplay-BlackItalic.eot");
+  src: url("../fonts/PlayfairDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BlackItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-BlackItalic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-BlackItalic.svg#PlayfairDisplay-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display Regular';
+  src: url("../fonts/PlayfairDisplay-Regular.eot");
+  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display BoldItalic';
+  src: url("../fonts/PlayfairDisplay-BoldItalic.eot");
+  src: url("../fonts/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display Italic';
+  src: url("../fonts/PlayfairDisplay-Italic.eot");
+  src: url("../fonts/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff"), url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: url("../fonts/PlayfairDisplay-Bold.eot");
+  src: url("../fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+.article-headline-txt {
+  font-size: 34px;
+  font-family: 'Poppins Bold';
+  color: #040F16;
+  text-transform: uppercase; }
+
+.box-container {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px 0 10px; }
+
+.grey-box {
+  background-color: #EFEFF6;
+  width: 100%;
+  padding: 20px 0 40px 0; }
+
+.article-main-btn {
+  font-family: 'Poppins Medium';
+  font-size: 18px;
+  transition: all .5s;
+  position: relative;
+  text-transform: uppercase; }
+  .article-main-btn:hover {
+    padding-left: 30px;
+    max-width: 400px;
+    transition: all .5s; }
+
+.btn--box {
+  display: flex;
+  justify-content: flex-start; }
+
+.article-btn {
+  margin: 40px 0 45px 0;
+  position: relative;
+  display: flex;
+  justify-content: flex-start; }
+
+.first-article-line {
+  display: none;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #040F16;
+  width: 220px;
+  left: 0;
+  top: 83%; }
+
+.arrow-line {
+  position: absolute;
+  left: 102%;
+  top: 60%;
+  transform: translate(0, -50%); }
+
+.first-article-line-two {
+  display: block;
+  border-top: 1px solid #040F16;
+  width: 60px;
+  position: relative; }
+
+.arrow {
+  position: absolute;
+  left: 100%;
+  transform: translate(0, -50%); }
+
+.registerbtn {
+  background-color: #040F16;
+  padding: 7px 70px;
+  color: #FBFBFF;
+  font-family: 'Poppins Medium';
+  cursor: pointer;
+  text-transform: lowercase; }
+
+.article-headline-txt {
+  font-size: 34px;
+  font-family: 'Poppins Bold';
+  color: #040F16;
+  text-transform: uppercase; }
+
+.header-mn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.815);
+  backdrop-filter: blur(5px); }
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header-content-left .header-main-logo {
+  cursor: pointer; }
+
+.header-content-left .logo {
+  font-size: 34px;
+  font-family: 'Playfair Display Bold';
+  color: #040F16; }
+
+.header-menu {
+  padding: 10px 5px 0 5px; }
+
+.header-navbar {
+  margin-top: 15px; }
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.navbar-li {
+  margin-right: 15px;
+  padding-bottom: 37px;
+  position: relative; }
+  .navbar-li:hover .navbar-menu-dropdown, .navbar-li:active .navbar-menu-dropdown {
+    display: block; }
+
+.navbar-txt:link, .navbar-txt:visited {
+  font-size: 14px;
+  color: #040F16;
+  padding: 8px 0;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  letter-spacing: 1px;
+  font-family: 'Poppins Bold';
+  transition: all .2s; }
+
+.navbar-txt:hover, .navbar-txt:active {
+  border-top: 3px solid #040F16;
+  color: #040F16;
+  transition: all .2s; }
+
+.responsive-header-container {
+  display: none; }
+
+.navbar-menu-dropdown {
+  background-color: #FBFBFF;
+  width: 248px;
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  list-style: inside; }
+
+.navbar-li-dropdown {
+  margin: 15px 0 15px 20px; }
+
+.navbar-txt-dropdown:link, .navbar-txt-dropdown:visited {
+  font-size: 16px;
+  color: #707070;
+  padding: 8px 0;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  letter-spacing: 1px;
+  font-family: 'Poppins Medium', 'FiraGO Medium'; }
+
+.navbar-txt-dropdown:hover, .navbar-txt-dropdown:active {
+  color: #040F16; }
+
+.responsive-header-container {
+  display: none;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  z-index: 110; }
+  .responsive-header-container .nav-bar {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99; }
+  .responsive-header-container .toggle {
+    right: 0; }
+
+.responsive-nav-dropdown {
+  display: none;
+  padding: 5px;
+  margin: 5px 0 5px 0; }
+
+.responsive-navbar-menu {
+  width: 100%; }
+
+.responsive-navbar-li {
+  text-align: start;
+  padding: 10px 0 10px 20px;
+  margin-bottom: 5px;
+  border-top: 1px solid rgba(112, 112, 112, 0.288);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.288); }
+  .responsive-navbar-li:hover .responsive-nav-dropdown, .responsive-navbar-li:active .responsive-nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: inside; }
+
+.responsive-navbar-li-txt:link, .responsive-navbar-li-txt:visited {
+  font-size: 14px;
+  color: #040F16;
+  padding-bottom: 8px 0;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  letter-spacing: 1px;
+  font-family: 'Poppins Bold';
+  transition: all .2s; }
+
+.responsive-dropdown-li {
+  margin: 5px 0 5px 0; }
+
+.responsive-li-txt:link, .responsive-li-txt:visited {
+  font-size: 12px;
+  color: #707070;
+  padding: 8px 0;
+  letter-spacing: 1px;
+  font-family: 'Poppins Medium';
+  list-style: inside; }
+
+.responsive-li-txt:hover, .responsive-li-txt:active {
+  color: #040F16; }
+
+/* Burger icon styles */
+.toggle-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2px 2px 2px 3px;
+  cursor: pointer;
+  z-index: 110; }
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  transition: transform 0.2s ease-out; }
+
+.toggle .line1 {
+  transform: scale(0.9) rotate(-45deg) translate(-6px, 4px); }
+
+.toggle .line2 {
+  display: none; }
+
+.toggle .line3 {
+  transform: scale(0.9) rotate(45deg) translate(-6px, -4px); }
+
+.footer-main {
+  background-color: #040F16;
+  padding: 0 10px 0 10px; }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.footer--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0px 75px 0px; }
+
+.footer-img {
+  max-width: 45px;
+  width: 100%; }
+
+.footer-txt {
+  font-size: 14px;
+  font-family: 'Poppins Medium';
+  color: #FBFBFF;
+  margin: 30px 0 0; }
+
+.footer-txt {
+  font-size: 14px;
+  font-family: 'Poppins Medium';
+  color: #FBFBFF;
+  margin: 30px 0 0; }
+
+.article-headline-txt {
+  font-size: 34px;
+  font-family: 'Poppins Bold';
+  color: #040F16;
+  text-transform: uppercase; }
+
+body {
+  margin: 80px 0 0;
+  width: 100%; }
+
+section {
+  background-image: url("../images/body-bg-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 50px; }
+
+.selected {
+  border-top: 3px solid #040F16; }
+
+.selected-nav-li {
+  border-top: 3px solid #040F16;
+  color: #040F16;
+  padding: 8px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Poppins Bold'; }
+
+.background-images-section {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  .background-images-section .bg-images-left,
+  .background-images-section .bg-images-right {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .background-images-section .vakhtang-img,
+  .background-images-section .alex-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); }
+  .background-images-section .main-section-heading {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    max-width: 670px;
+    width: 100%;
+    text-align: center; }
+  .background-images-section .main-heading-txt {
+    font-size: 40px;
+    color: #FBFBFF;
+    line-height: initial;
+    padding: 5px;
+    font-family: 'Playfair Display'; }
+  .background-images-section .heading-txt-border {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: -100%;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-top: 1px solid #FBFBFF; }
+
+.firt-article-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.article-headline {
+  margin: 33px 0 0; }
+
+.article-main-para {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between; }
+
+.main-para-row {
+  max-width: 450px;
+  width: 100%; }
+  .main-para-row .nonlist {
+    margin-bottom: 20px;
+    font-family: 'Poppins Medium'; }
+
+.article-main-txt {
+  font-size: 14px;
+  font-family: 'Poppins Regular';
+  line-height: initial; }
+
+.first-article-nav {
+  margin: 20px auto 23px auto;
+  max-width: 1010px;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background-color: transparent; }
+
+.first-article-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.first-article-navbar-txt {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  color: #040F16;
+  border-bottom: 1px solid transparent;
+  transition: all .2s; }
+  .first-article-navbar-txt:hover, .first-article-navbar-txt:active {
+    border-bottom: 1px solid #040F16;
+    transition: all .2s;
+    color: #040F16; }
+
+.projects-section-headline-box {
+  padding: 40px 0 20px 0; }
+
+.projects-section-headline {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  color: #040F16; }
+
+.projects-section-box {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px; }
+  .projects-section-box .registration-button-box {
+    position: absolute;
+    bottom: -16px;
+    right: 170px; }
+
+.project-section-mini-headline {
+  margin-bottom: 20px; }
+  .project-section-mini-headline .mini-headline-txt {
+    font-family: 'Poppins Bold';
+    font-size: 25px;
+    color: #040F16;
+    margin-bottom: 10px; }
+  .project-section-mini-headline .mini-headline-txt-mini {
+    font-family: 'Poppins Thin';
+    color: #040F16;
+    font-size: 14px; }
+
+.mini-headline-description-box {
+  margin-bottom: 40px; }
+  .mini-headline-description-box .mini-headline-description {
+    font-family: 'Poppins Medium';
+    font-size: 20px;
+    color: #040F16; }
+
+.competition-description-area {
+  width: 100%; }
+  .competition-description-area .competition-description-txt {
+    font-family: 'Poppins Thin';
+    font-size: 16px;
+    color: #040F16;
+    line-height: initial; }
+
+@media (max-width: 700.98px) {
+  .header-content {
+    display: none; }
+  .header-switch-btn {
+    display: none; }
+  .responsive-header-container {
+    display: block; }
+  .background-images-section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+  .bg-images-left,
+  .bg-images-right {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+  .main-section-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 670px;
+    width: 100%; }
+  .main-heading-txt {
+    font-size: 30px; }
+  .heading-txt-border {
+    display: none; }
+  .first-article-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .article-main-para {
+    width: 100%;
+    overflow: hidden;
+    height: 265px; }
+  .article-main-txt {
+    font-size: 12px;
+    word-spacing: 1px;
+    font-family: 'Poppins Regular'; }
+  .first-article-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .first-article-navbar-li {
+    margin-bottom: 10px; } }
+
+@media (max-width: 991.98px) {
+  .header-content {
+    display: none; }
+  .header-switch-btn {
+    position: fixed;
+    top: 28px;
+    right: 80px; }
+  .header-content-left {
+    position: fixed;
+    left: 40px;
+    top: 16px; }
+  .responsive-header-container {
+    display: block; }
+  .background-images-section {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+  .bg-images-left,
+  .bg-images-right {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+  .main-section-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 670px;
+    width: 100%; }
+  .main-heading-txt {
+    font-size: 30px; }
+  .heading-txt-border {
+    margin-top: 1.5rem; }
+  .first-article-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .article-main-para {
+    width: 100%;
+    height: 265px;
+    overflow: hidden; }
+  .article-main-txt {
+    font-size: 12px;
+    word-spacing: 1px;
+    font-family: 'Poppins Regular'; }
+  .first-article-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .first-article-navbar-li {
+    margin-bottom: 10px; } }
+
+@media (max-width: 575.98px) {
+  .main-heading-txt {
+    font-size: 24px; } }
+
+@media (max-width: 1199.98px) {
+  .header-mn {
+    padding: 0 10px 0 10px; } }

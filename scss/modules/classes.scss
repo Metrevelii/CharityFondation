@@ -1,0 +1,9 @@
+@import './modules/variables.scss';
+
+
+%greyboxheadline {
+    font-size: $fontsize34;
+    font-family: 'Poppins Bold';
+    color: $color01-blck;
+    text-transform: uppercase;
+}
