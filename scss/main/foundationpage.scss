@@ -1,0 +1,100 @@
+
+// foundation
+
+.foundation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+    .head-section-heading-box {
+        margin-top: 70px;
+    }
+    
+    
+    .head-section-heading-txt {
+        text-align: center;
+    }
+
+ 
+
+.about-us-txt {
+    font-size: $fontsize16;
+    font-family: 'Poppins Light';
+    color: $color01-blck;
+    line-height: initial;
+}
+
+.about-us-ul {
+    margin-top: 40px;
+}
+
+//team 
+
+.team-section {
+    margin-top: 40px;
+    @include flex;
+}
+    .team-section-img {
+        margin-right: 20px;
+    }
+    .team-section-txt {
+        @include verticalflex;
+    }
+    .team-section-headline {
+        font-size: $fontsize25;
+        font-family: 'Poppins BoldItalic';
+        color: $color01-blck;
+    }
+    .team-section-text-area {
+        margin-top: 20px;
+        font-family: 'Poppins Italic';
+        font-size: $fontsize18;
+        color: $color01-blck;
+    }
+
+
+// responsive team section
+.team-section-responsive {
+    display: none;
+}
+
+.team-section-headline {
+    margin-bottom: 30px;
+}
+.team-section-headline-txt {
+    font-family: 'Poppins Bold';
+    font-size: $fontsize26;
+    color: $color01-blck;
+    text-align: center;
+}
+
+.team-photos-section {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.responsive-team-img {
+    width: 248px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.team-member-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.team-member-name {
+    font-size: $fontsize25;
+    font-family: 'Poppins BoldItalic';
+    color: $color01-blck;
+    margin-bottom: 10px;
+}
+
+.team-member-bio-para {
+    font-family: 'Poppins Italic';
+    font-size: $fontsize12;
+    color: $color01-blck;
+}
+

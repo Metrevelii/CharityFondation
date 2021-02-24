@@ -21,8 +21,14 @@ section{
 .selected-nav-li {
     border-top: 3px solid $color01-blck;
     color: $color01-blck;
-    padding: 8px 0;
+    padding: 8px 15px 0 15px;
     font-size: $fontsize14;
     text-transform: uppercase;
     font-family:'Poppins Bold';
+    &:hover,
+    &:active {
+        color: $color01-blck;
+    }
 }
+
+

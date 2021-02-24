@@ -48,7 +48,6 @@
     }
 
     .navbar-li {
-        margin-right: 15px;
         padding-bottom: 37px;
         position: relative;
         &:hover,
@@ -64,7 +63,7 @@
         &:visited {
             font-size: $fontsize14;
             color: $color01-blck;
-            padding: 8px 0;
+            padding: 8px 15px 0 15px;
             text-transform: uppercase;
             border-top: 3px solid transparent;
             letter-spacing: 1px;
@@ -94,7 +93,7 @@
     display: none;
     position: absolute;
     top: 53px;
-    left: 0;
+    left: -40%;
     list-style: inside;
 }
 
