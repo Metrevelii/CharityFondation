@@ -3,23 +3,23 @@
 
 .foundation-section {
     display: flex;
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
-    .head-section-heading-box {
-        margin-top: 70px;
-    }
+.foundation-heading-box {
+    border-bottom: 2px solid $color01-blck;
+    padding:0 30px 20px 60px;
+}
     
     
-    .head-section-heading-txt {
-        text-align: center;
-    }
+   
 
  
 
 .about-us-txt {
     font-size: $fontsize16;
-    font-family: 'Poppins Light';
+    font-family: 'Poppins Light', 'FiraGO Light';
     color: $color01-blck;
     line-height: initial;
 }
@@ -42,12 +42,12 @@
     }
     .team-section-headline {
         font-size: $fontsize25;
-        font-family: 'Poppins BoldItalic';
+        font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
         color: $color01-blck;
     }
     .team-section-text-area {
         margin-top: 20px;
-        font-family: 'Poppins Italic';
+        font-family: 'Poppins Italic', 'FiraGO Book';
         font-size: $fontsize18;
         color: $color01-blck;
     }

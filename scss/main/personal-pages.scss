@@ -23,13 +23,11 @@
 
 .head-section-heading-box {
     border-bottom: 2px solid $color01-blck;
-    margin-left: 20px;
-    padding:0 0 20px 60px;
+    padding:0 30px 20px 60px;
 }
 
 .head-section-heading-txt {
     @extend %personal-pg-headline;
-    text-align: start;
 }
 
 .personal-page-box {
@@ -43,7 +41,7 @@
 
 .personal-pg-txt {
     font-size: $fontsize16;
-    font-family: 'Poppins Light';
+    font-family: 'Poppins Light', 'BPG Nino Mtavruli Bold';
     color: $color01-blck;
     margin-bottom: 30px;
 }
@@ -132,16 +130,16 @@
     }
 
     .manuscript-head-txt {
-        font-family: 'Poppins BoldItalic';
+        font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
         font-size: $fontsize25;
         color: $color01-blck;
-        margin-top: 10px;
+        margin: 10px 0;
     }
 
     .manuscript-bot-txt {
         font-size: $fontsize18;
         color: $color01-blck;
-        font-family: 'Poppins Italic';
+        font-family: 'Poppins Italic', 'FiraGO LightItalic';
     }
     
 

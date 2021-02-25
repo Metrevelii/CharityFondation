@@ -268,12 +268,12 @@ button, textarea, input:focus {
 
 .article-headline-txt {
   font-size: 34px;
-  font-family: 'Poppins Bold';
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
   color: #040F16;
   text-transform: uppercase; }
 
 .head-section-heading-txt, .personal-pg-head-txt, .contact-page-headline {
-  font-family: 'Poppins Bold';
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
   font-size: 40px;
   color: #040F16; }
 
@@ -306,7 +306,7 @@ button, textarea, input:focus {
     opacity: 100%; }
 
 .article-main-btn {
-  font-family: 'Poppins Medium';
+  font-family: 'Poppins Medium', 'FiraGO Bold';
   font-size: 18px;
   transition: all .5s;
   position: relative;
@@ -368,18 +368,18 @@ button, textarea, input:focus {
   background-color: #040F16;
   padding: 7px 70px;
   color: #FBFBFF;
-  font-family: 'Poppins Medium';
+  font-family: 'Poppins Medium', 'BPG Nino Mtavruli Bold';
   cursor: pointer;
   text-transform: lowercase; }
 
 .article-headline-txt {
   font-size: 34px;
-  font-family: 'Poppins Bold';
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
   color: #040F16;
   text-transform: uppercase; }
 
 .head-section-heading-txt, .personal-pg-head-txt, .contact-page-headline {
-  font-family: 'Poppins Bold';
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
   font-size: 40px;
   color: #040F16; }
 
@@ -429,7 +429,7 @@ button, textarea, input:focus {
   text-transform: uppercase;
   border-top: 3px solid transparent;
   letter-spacing: 1px;
-  font-family: 'Poppins Bold';
+  font-family: 'Poppins Bold', 'FiraGO Bold';
   transition: all .2s; }
 
 .navbar-txt:hover, .navbar-txt:active {
@@ -593,12 +593,12 @@ button, textarea, input:focus {
 
 .article-headline-txt {
   font-size: 34px;
-  font-family: 'Poppins Bold';
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
   color: #040F16;
   text-transform: uppercase; }
 
 .head-section-heading-txt, .personal-pg-head-txt, .contact-page-headline {
-  font-family: 'Poppins Bold';
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
   font-size: 40px;
   color: #040F16; }
 
@@ -624,7 +624,7 @@ section {
   padding: 8px 15px 0 15px;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: 'Poppins Bold'; }
+  font-family: 'Poppins Bold', 'FiraGO Bold'; }
   .selected-nav-li:hover, .selected-nav-li:active {
     color: #040F16; }
 
@@ -663,7 +663,7 @@ section {
   color: #FBFBFF;
   line-height: initial;
   padding: 5px;
-  font-family: 'Playfair Display'; }
+  font-family: 'Playfair Display', 'BPG Nino Mtavruli Bold'; }
 
 .heading-txt-border {
   display: block;
@@ -713,7 +713,7 @@ section {
   align-items: center; }
 
 .first-article-navbar-txt {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', 'FiraGO Regular';
   font-size: 40px;
   color: #040F16;
   border-bottom: 1px solid transparent;
@@ -742,11 +742,7 @@ section {
 
 .head-section-heading-box {
   border-bottom: 2px solid #040F16;
-  margin-left: 20px;
-  padding: 0 0 20px 60px; }
-
-.head-section-heading-txt {
-  text-align: start; }
+  padding: 0 30px 20px 60px; }
 
 .personal-page-box {
   margin-top: 60px; }
@@ -757,7 +753,7 @@ section {
 
 .personal-pg-txt {
   font-size: 16px;
-  font-family: 'Poppins Light';
+  font-family: 'Poppins Light', 'BPG Nino Mtavruli Bold';
   color: #040F16;
   margin-bottom: 30px; }
 
@@ -820,15 +816,15 @@ section {
   width: 100%; }
 
 .manuscript-head-txt {
-  font-family: 'Poppins BoldItalic';
+  font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
   font-size: 25px;
   color: #040F16;
-  margin-top: 10px; }
+  margin: 10px 0; }
 
 .manuscript-bot-txt {
   font-size: 18px;
   color: #040F16;
-  font-family: 'Poppins Italic'; }
+  font-family: 'Poppins Italic', 'FiraGO LightItalic'; }
 
 .audio-samples-section {
   margin-top: 44px; }
@@ -866,18 +862,17 @@ section {
 
 .foundation-section {
   display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: center; }
 
-.head-section-heading-box {
-  margin-top: 70px; }
-
-.head-section-heading-txt {
-  text-align: center; }
+.foundation-heading-box {
+  border-bottom: 2px solid #040F16;
+  padding: 0 30px 20px 60px; }
 
 .about-us-txt {
   font-size: 16px;
-  font-family: 'Poppins Light';
+  font-family: 'Poppins Light', 'FiraGO Light';
   color: #040F16;
   line-height: initial; }
 
@@ -900,12 +895,12 @@ section {
 
 .team-section-headline {
   font-size: 25px;
-  font-family: 'Poppins BoldItalic';
+  font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
   color: #040F16; }
 
 .team-section-text-area {
   margin-top: 20px;
-  font-family: 'Poppins Italic';
+  font-family: 'Poppins Italic', 'FiraGO Book';
   font-size: 18px;
   color: #040F16; }
 
@@ -966,26 +961,26 @@ section {
 .project-section-mini-headline {
   margin-bottom: 20px; }
   .project-section-mini-headline .mini-headline-txt {
-    font-family: 'Poppins Bold';
+    font-family: 'Poppins Bold', 'FiraGO Bold';
     font-size: 25px;
     color: #040F16;
     margin-bottom: 10px; }
   .project-section-mini-headline .mini-headline-txt-mini {
-    font-family: 'Poppins Thin';
+    font-family: 'Poppins Thin', 'FiraGO Light';
     color: #040F16;
     font-size: 14px; }
 
 .mini-headline-description-box {
   margin-bottom: 40px; }
   .mini-headline-description-box .mini-headline-description {
-    font-family: 'Poppins Medium';
+    font-family: 'Poppins Medium', 'FiraGO Medium';
     font-size: 20px;
     color: #040F16; }
 
 .competition-description-area {
   width: 100%; }
   .competition-description-area .competition-description-txt {
-    font-family: 'Poppins Thin';
+    font-family: 'Poppins Thin', 'FiraGO Light';
     font-size: 16px;
     color: #040F16;
     line-height: initial; }

@@ -6,22 +6,122 @@ toggleButton.addEventListener('click', function () {
 
 
 
-// switch btn
+// // switch btn
 
-document.querySelector('.switch-btn').addEventListener('click', function() {
-	document.querySelector('.btn--eng').classList.add('btn--active');
-	document.querySelector('.btn--geo').classList.remove('btn--active');
-});
+// document.querySelector('.switch-btn').addEventListener('click', function () {
+// 	document.querySelector('.btn--eng').classList.add('btn--active');
+// 	document.querySelector('.btn--geo').classList.remove('btn--active');
+// });
 
-document.querySelector('.btn--geo').addEventListener('click', function() {
-	document.querySelector('.btn--geo').classList.add('btn--active');
-	document.querySelector('.btn--eng').classList.remove('btn--active');
-})
+// document.querySelector('.btn--geo').addEventListener('click', function () {
+// 	document.querySelector('.btn--geo').classList.add('btn--active');
+// 	document.querySelector('.btn--eng').classList.remove('btn--active');
+// });
 
 
 
 
 // multi language
 
+// define language reload anchors
 
+var dataReload = document.querySelectorAll("[data-reload]");
+
+
+//language translations
+
+var language = {
+	eng: {
+		alexi: "Alexi",
+		vakhtang: "Vakhtang",
+		foundation: "Foundation",
+		projects: "Projects",
+		contact: "Contact",
+		homeheadline: "Alexi And Vakhtang Matchavariani Charity Found",
+		homeheadline2: "Alexi Matchavariani",
+		homeheadline3: "Vakhtang Matchavariani",
+		ourmissiontxt: "Our Mission",
+		aboutus: "About Us",
+		photos: "Photos",
+		team: "Team",
+		namelastname: "Name Lastname",
+		yourmessage: "Your Message",
+		learnmore: "Learn More",
+		biography: "Biography",
+		manuscripts: "Manuscripts",
+		presse: "Presse",
+		audiosamples: "Video & Audio Samples",
+		information: "Information",
+		manuscriptname: "Name #1",
+		manuscriptdescription: "The Study Of The Writing In Surviving Manuscripts",
+		concoursename: "Concourse Name",
+		concoursemini: "Contemporary business and science",
+		concoursedescription: "Tasks To Be Executed Over A Fixed Period",
+		register: "apply",
+		sendbtn: "send",
+		//team member biography
+		teammemberbiography: "A biography, or simply bio, is a detailed description of a person's life. It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of his or her life, including intimate details of experience, and may include an analysis of the subject's personality"
+		
+	},
+	geo: {
+		alexi: "ალექსი",
+		vakhtang: "ვახტანგ",
+		foundation: "ფონდი",
+		projects: "პროექტები",
+		contact: "კონტაქტი",
+		homeheadline: "ალექსი და ვახტანგ მაჭავარიანის საქველმოქმედო ფონდი",
+		homeheadline2: "ალექსი მაჭავარიანი",
+		homeheadline3: "ვახტანგ მაჭავარიანი",
+		ourmissiontxt: "ჩვენი მისია",
+		aboutus: "ჩვენს შესახებ",
+		photos: "ფოტოები",
+		team: "გუნდი",
+		namelastname: "სახელი გვარი",
+		yourmessage: "თქვენი მესიჯი",
+		learnmore: "გაიგეთ მეტი",
+		biography: "ბიოგრაფია",
+		manuscripts: "მანუსკრიპტები",
+		presse: "პრესა",
+		audiosamples: "ვიდეო და აუდიო ნამუშევრები",
+		information: "ინფორმაცია",
+		manuscriptname: "სახელი",
+		manuscriptdescription: "ხელნაწერი, უმთავრესად ძველი",
+		concoursename: "კონკურსის სახელი",
+		concoursemini: "შეჯიბრება, რომელიც ტარდება",
+		concoursedescription: "საუკეთესო მონაწილეების ან საუკეთესო ნამუშევრების გამოვლენის მიზნით",
+		register: "რეგისტრაცია",
+		sendbtn: "გაგზავნა",
+		//team member biography
+		teammemberbiography: " ადამიანის ცხოვრების აღწერა. ბიოგრაფია ლიტერატურისა და ზოგიერთი მედიის (მაგ. კინოს) ერთ-ერთი ჟანრია, რომელსაც ინდივიდუალური ცხოვრების წერილობითი აღწერა უდევს საფუძვლად. ბიოგრაფია ძირითადად დოკუმენტურ წყაროებს ეყრდნობა და გამოგონილი არ არის. კურიკულიმ-ვიტას ან პროფილისგან განსხვავებით ბიოგრაფია კომპლექსურად აღწერს ადამიანის პერსონალურ მახასიათებლებს, რომელიც მისი გამოცდილების ინტიმურ დეტალებსაც ეყრდნობა."
+	}
+};
+
+
+// define language via window hash
+
+if (window.location.hash) {
+	if (window.location.hash === "#geo") {
+		// alexi.textContent = language.geo.alexi; 
+		// vakhtang.textContent = language.geo.vakhtang;
+		// foundation.textContent = language.geo.foundation;
+		// projects.textContent = language.geo.projects;
+		// contact.textContent = language.geo.contact;
+		// .innerText = language.geo.projects;
+		dataReload.forEach(e => {
+			e.textContent = language.geo[e.id];
+		})
+	}
+};
+
+
+//define language reload onclick illiteration
+dataReload.forEach(e => {
+	e.onclick = () => {
+		location.reload();
+	}
+})
+// for (i = 0; i <= dataReload.length; i++) {
+// 	dataReload[i].onclick = function() {
+// 	};
+// };
 
