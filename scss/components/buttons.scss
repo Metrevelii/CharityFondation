@@ -3,13 +3,15 @@
 .header-switch-btn {
     background-color: transparent;
     display: flex;
-    justify-content: flex-star;
+    justify-content: flex-start;
+    padding-bottom: 15px;
     .switch-btn {
         font-family: 'Poppins Bold';
         font-size: $fontsize14;
         text-align: center;
         opacity: 50%;
         color: $color01-blck;
+        cursor: pointer;
     }
     .switch-btn-line {
         color: $color01-blck;
@@ -31,13 +33,13 @@
 .article-main-btn {
     font-family: 'Poppins Medium', 'FiraGO Bold';
     font-size: $fontsize18;
-    transition: all .5s;
+    transition: all .2s;
     position: relative;
     text-transform: uppercase;
     &:hover{
-        padding-left: 30px;
+        transform: translate(7%, 10%);
         max-width: 400px;
-        transition: all .5s;
+        transition: all .2s;
     }
 }  
 
@@ -65,6 +67,8 @@
     width: 220px;
     left: 0;
     top: 83%;
+    transition: all .2s;
+    
 }
 .arrow-line {
     position: absolute;

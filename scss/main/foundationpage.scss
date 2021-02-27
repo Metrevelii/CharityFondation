@@ -3,7 +3,6 @@
 
 .foundation-section {
     display: flex;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -11,7 +10,13 @@
     border-bottom: 2px solid $color01-blck;
     padding:0 30px 20px 60px;
 }
-    
+.foundation-headline {
+    @extend %personal-pg-headline;
+}
+
+.foundation-section-img {
+    width: 100%;
+}
     
    
 
