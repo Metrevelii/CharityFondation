@@ -3,6 +3,10 @@
     background-color: $color05;
 }
 
+.footer-respo {
+    background-color: $color05;
+}
+
     .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,7 +18,7 @@
 
     .footer-txt {
             font-size: $fontsize14;
-            font-family: 'Poppins Medium';
+            font-family: 'Poppins Medium', 'FiraGO Medium';
             color: $color02-wht;
     }
 
@@ -124,6 +128,6 @@
 
     .respo-footer-txt {
         font-size: $fontsize12;
-        font-family: 'Poppins Medium';
+        font-family: 'Poppins Medium', 'FiraGO Medium';
         color: $color02-wht;   
     }

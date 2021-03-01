@@ -15,6 +15,27 @@
             .logo {
                 font-family: "Playfair Display Regular";
             }
+            //flags
+
+            // clickze mxolod GEO-ze gadadis, ar mushaobs classList.add da remove
+            .switch-flags {
+                display: flex;
+                justify-content: flex-end;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                .switch-btn {
+                    margin-left: 15px;
+                    cursor: pointer;
+                    opacity: 30%;
+                }
+                .btn--active {
+                    opacity: 100%;
+                }
+                
+            }
+
+
         }
     
     
@@ -211,20 +232,24 @@
         .additional-info-section {
             margin-bottom: 25px;
         }
-    
-        .footerconten {
-            display: none;
-        }
+        
+
+
+     
     
         //footer
+        .footer-main {
+            .footer-container {
+                display: none;
+            }
+            .footer-responsive-container {
+                display: block;
+            }
+           
+        }
     
        
-    //   .footer-container {
-    //     display: none;
-    //   }
-    //   .footer-responsive-container {
-    //     display: block;
-    //   }
+
     
         
     
@@ -260,6 +285,10 @@
             top: 16px;
         }
     
+        .contact-form-section  {
+            width: 80%;
+            padding:0 35px 0 35px;
+        }
         
     
         .responsive-header-container {
@@ -356,6 +385,10 @@
         grid-column: 1 / -1;
         width: 100%;
     }
+
+    .switch-flags {
+        display: none;
+    }
     
     }
     
@@ -365,6 +398,12 @@
         .main-heading-txt {
             font-size: $fontsize24;
         }
+        // .footer-main {
+        //     .footer-top-wrapper {
+        //         align-items: center;
+        //     }
+        // }
+
     }
     
     // // Large devices (desktops, less than 1200px)

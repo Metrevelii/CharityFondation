@@ -566,6 +566,9 @@ button, textarea, input:focus {
 .footer-main {
   background-color: #040F16; }
 
+.footer-respo {
+  background-color: #040F16; }
+
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -575,7 +578,7 @@ button, textarea, input:focus {
 
 .footer-txt {
   font-size: 14px;
-  font-family: 'Poppins Medium';
+  font-family: 'Poppins Medium', 'FiraGO Medium';
   color: #FBFBFF; }
 
 .footer-img {
@@ -651,7 +654,7 @@ button, textarea, input:focus {
 
 .respo-footer-txt {
   font-size: 12px;
-  font-family: 'Poppins Medium';
+  font-family: 'Poppins Medium', 'FiraGO Medium';
   color: #FBFBFF; }
 
 .article-headline-txt {
@@ -1166,6 +1169,18 @@ textarea {
     align-items: center; }
     .responsive-header-container .logo {
       font-family: "Playfair Display Regular"; }
+    .responsive-header-container .switch-flags {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 20px;
+      right: 20px; }
+      .responsive-header-container .switch-flags .switch-btn {
+        margin-left: 15px;
+        cursor: pointer;
+        opacity: 30%; }
+      .responsive-header-container .switch-flags .btn--active {
+        opacity: 100%; }
   .background-images-section {
     display: inline-flex;
     flex-direction: column;
@@ -1285,8 +1300,10 @@ textarea {
     margin-left: 30px; }
   .additional-info-section {
     margin-bottom: 25px; }
-  .footerconten {
-    display: none; } }
+  .footer-main .footer-container {
+    display: none; }
+  .footer-main .footer-responsive-container {
+    display: block; } }
 
 @media (max-width: 991.98px) {
   .header-content {
@@ -1299,6 +1316,9 @@ textarea {
     position: fixed;
     left: 40px;
     top: 16px; }
+  .contact-form-section {
+    width: 80%;
+    padding: 0 35px 0 35px; }
   .responsive-header-container {
     display: block; }
   .background-images-section {
@@ -1358,7 +1378,9 @@ textarea {
   .item--4 {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
-    width: 100%; } }
+    width: 100%; }
+  .switch-flags {
+    display: none; } }
 
 @media (max-width: 575.98px) {
   .main-heading-txt {

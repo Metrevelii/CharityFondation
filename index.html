@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alexi and Vakhtang Matchavariani Charity Foundation">
+    <meta name="keywords" content="Charity Foundation, Alexi Matchavariani, Vakhtang Matchavariani">
+    <!-- <meta name="author" content=""> -->
+    <meta property="og:url"          content="" />
+    <meta property="og:type"         content="Informational Website" />
+    <meta property="og:title"        content="Alexi and Vakhtang Matchavariani Charity Foundation" />
+    <meta property="og:description"  content="Alexi and Vakhtang Matchavariani biography, Charity information" />
+    <meta property="og:image"        content="" />
     <!-- Fontawesome cdn link for burger icon -->
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/main.css">
@@ -67,9 +75,9 @@
             </a>
             </div>
             <div class="header-switch-btn">
-              <a href="#eng" class="switch-btn btn--eng">ENG</a>
+              <a data-lang class="switch-btn btn--eng">ENG</a>
               <span class="switch-btn-line">/</span>
-              <a href="#geo" class="switch-btn btn--geo">GEO</a>
+              <a data-lang class="switch-btn btn--geo">GEO</a>
             </div>
         <nav class="header__nav nav-bar">
             <div class="toggle-menu">
@@ -106,6 +114,16 @@
                 <li class="responsive-navbar-li"><a href="projects.html" class="responsive-navbar-li-txt" id="projects" data-reload>Projects</a></li>
                 <li class="responsive-navbar-li"><a href="contact.html" class="responsive-navbar-li-txt" id="contact" data-reload>Contact</a></li>
             </ul>
+            
+            <!-- switch flag icons  -->
+            <div class="switch-flags">
+              <a data-lang class="switch-btn btn--eng">
+                  <img src="images/england-flag.png" alt="england flag">
+                </a>
+                <a data-lang class="switch-btn btn--geo">
+                  <img src="images/geo.png" alt="england flag">
+                </a>
+             </div>
         </nav>
      </div>   
      <!-- Responsive Navbar End -->
@@ -218,7 +236,7 @@
         </div>
         <div class="item item--3">
           <img src="images/location.svg" alt="location-icon" class="footer-img">
-          <p class="footer-txt">Location Street</p>
+          <p class="footer-txt" id="location" data-reload>Location Street</p>
         </div>
         <div class="item item--4">
           <div class="soc-media-icons">
@@ -229,7 +247,7 @@
             <img src="images/youtube.svg" alt="youtube-icon" class="footer-img">
           </a>
           </div>
-          <p class="footer-txt">Social Media</p>
+          <p class="footer-txt" id="socialmedia" data-reload>Social Media</p>
         </div>
       </div>
       <div class="footer-responsive-container">
@@ -244,7 +262,7 @@
           </div>
           <div class="top-main-content">
             <img src="images/location.svg" alt="location-icon" class="respo-footer-img">
-            <p class="respo-footer-txt">Location Street</p>
+            <p class="respo-footer-txt"  id="location" data-reload>Location Street</p>
           </div>
         </div>
         <div class="footer-bottom-wrapper">
@@ -256,7 +274,7 @@
             <img src="images/youtube.svg" alt="youtube-icon" class="footer-img">
           </a>
           </div>
-          <p class="respo-footer-txt">Social Media</p>
+          <p class="respo-footer-txt" id="socialmedia" data-reload>Social Media</p>
         </div>
       </div>
     </footer>  

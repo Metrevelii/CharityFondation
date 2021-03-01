@@ -41,6 +41,8 @@ function clickedReload() {
 			photos: "Photos",
 			team: "Team",
 			namelastname: "Name Lastname",
+			socialmedia: "Social Media",
+			location: "Location Street",
 			
 			learnmore: "Learn More",
 			biography: "Biography",
@@ -73,6 +75,8 @@ function clickedReload() {
 			photos: "ფოტოები",
 			team: "გუნდი",
 			namelastname: "სახელი გვარი",
+			socialmedia: "სოციალური მედია",
+			location: "ლოკაცია",
 			
 			learnmore: "გაიგეთ მეტი",
 			biography: "ბიოგრაფია",
