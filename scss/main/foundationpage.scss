@@ -63,43 +63,104 @@
     display: none;
 }
 
-.team-section-headline {
-    margin-bottom: 30px;
-}
-.team-section-headline-txt {
-    font-family: 'Poppins Bold';
-    font-size: $fontsize26;
-    color: $color01-blck;
-    text-align: center;
-}
 
-.team-photos-section {
+// carousel
+.carousel {
+    align-items: center;
     display: flex;
-    justify-content: center;
+    margin: 2rem auto;
     overflow: hidden;
-}
-
-.responsive-team-img {
+    position: relative;
     width: 248px;
-    object-fit: cover;
-    padding: 5px;
+    
+    
+
+
+
+    &__images {
+        display: flex;
+        transition: 0.25s;
+
+
+        img {
+            border-radius: 5px;
+            width: 248px;
+            
+        }
+    }
+
+
+
+
+    &__button {
+        background: $color01-blck;
+        border: 0;
+        border-radius: 50%;
+        color: $color02-wht;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        height: 3rem;
+        opacity: 0.25;
+        position: absolute;
+        transition: opacity 0.25s;
+        width: 3rem;
+        z-index: 1;
+
+        &.previous {
+            left: 5px;
+        }
+
+        &.next {
+            right: 5px;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
 }
 
-.team-member-info {
-    text-align: center;
-    padding: 10px;
-}
 
-.team-member-name {
-    font-size: $fontsize25;
-    font-family: 'Poppins BoldItalic';
-    color: $color01-blck;
-    margin-bottom: 10px;
-}
 
-.team-member-bio-para {
-    font-family: 'Poppins Italic';
-    font-size: $fontsize12;
-    color: $color01-blck;
-}
+// .team-section-headline {
+//     margin-bottom: 30px;
+// }
+// .team-section-headline-txt {
+//     font-family: 'Poppins Bold', 'FiraGO Bold';
+//     font-size: $fontsize26;
+//     color: $color01-blck;
+//     text-align: center;
+// }
+
+// .team-photos-section {
+//     display: flex;
+//     justify-content: center;
+//     overflow: hidden;
+// }
+
+// .responsive-team-img {
+//     width: 248px;
+//     object-fit: cover;
+//     padding: 5px;
+// }
+
+// .team-member-info {
+//     text-align: center;
+//     padding: 10px;
+// }
+
+// .team-member-name {
+//     font-size: $fontsize25;
+//     font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+//     color: $color01-blck;
+//     margin-bottom: 10px;
+// }
+
+// .team-member-bio-para {
+//     font-family: 'Poppins Italic', 'FiraGO BoldItalic';
+//     font-size: $fontsize12;
+//     color: $color01-blck;
+// }
 
