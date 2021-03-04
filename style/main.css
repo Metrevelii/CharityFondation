@@ -965,6 +965,19 @@ section {
     .carousel__images img {
       border-radius: 5px;
       width: 248px; }
+  .carousel .team-member-name {
+    font-size: 25px;
+    font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+    color: #040F16;
+    margin-bottom: 10px;
+    width: 248px;
+    padding: 0 5px; }
+  .carousel .team-member-bio-para {
+    font-family: 'Poppins Italic', 'FiraGO BoldItalic';
+    font-size: 12px;
+    color: #040F16;
+    width: 248px;
+    padding: 0 5px; }
   .carousel__button {
     background: #040F16;
     border: 0;
@@ -980,9 +993,11 @@ section {
     width: 3rem;
     z-index: 1; }
     .carousel__button.previous {
-      left: 5px; }
+      left: 5px;
+      top: 100px; }
     .carousel__button.next {
-      right: 5px; }
+      right: 5px;
+      top: 100px; }
     .carousel__button:hover {
       opacity: 0.5; }
 
@@ -1360,7 +1375,8 @@ textarea {
     align-items: center; }
   .first-article-navbar-li {
     margin-bottom: 10px; }
-  .manuscripts-page-headline {
+  .manuscripts-page-headline,
+  .projects-section-headline {
     text-align: center; }
   .presse-wrapper,
   .manuscripts-main,
@@ -1368,6 +1384,8 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .photos-headline {
+    text-align: center; }
   .footer-container {
     display: grid;
     grid-template-rows: repeat(2, 1fr);

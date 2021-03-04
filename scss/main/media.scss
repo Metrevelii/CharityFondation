@@ -163,6 +163,7 @@
     
     
         //team section
+
         .team-section-basic-content {
             display: none;
         }
@@ -357,7 +358,8 @@
     margin-bottom: 10px;
     }
     
-    .manuscripts-page-headline {
+    .manuscripts-page-headline,
+    .projects-section-headline {
         text-align: center;
     }
     
@@ -367,9 +369,13 @@
     .presse-wrapper,
     .manuscripts-main,
     .personal-page-photos-box {
-        @include responsivecenter;
+        @include responsivecenter; 
     }
-    
+     
+
+    .photos-headline {
+        text-align: center;
+    }
     // footer
     .footer-container {
         display: grid;

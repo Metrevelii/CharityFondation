@@ -73,10 +73,6 @@
     position: relative;
     width: 248px;
     
-    
-
-
-
     &__images {
         display: flex;
         transition: 0.25s;
@@ -89,6 +85,22 @@
         }
     }
 
+    .team-member-name {
+        font-size: $fontsize25;
+        font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+        color: $color01-blck;
+        margin-bottom: 10px;
+        width: 248px;
+        padding: 0 5px;
+    }
+
+    .team-member-bio-para {
+        font-family: 'Poppins Italic', 'FiraGO BoldItalic';
+        font-size: $fontsize12;
+        color: $color01-blck;
+        width: 248px;
+        padding: 0 5px;
+    }
 
 
 
@@ -106,13 +118,16 @@
         transition: opacity 0.25s;
         width: 3rem;
         z-index: 1;
+        
 
         &.previous {
             left: 5px;
+            top: 100px;
         }
 
         &.next {
             right: 5px;
+            top: 100px;
         }
 
         &:hover {
